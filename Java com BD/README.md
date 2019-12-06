@@ -37,7 +37,6 @@
 <hr />
 <p>&nbsp;</p>
 
-
 <h2>1&ordm; Etapa - Importar bibliotecas de liga&ccedil;&atilde;o &agrave; base de dados</h2>
 <table style="width: 421px;" border="0" cellspacing="1" cellpadding="1">
 <tbody>
@@ -54,11 +53,16 @@
 <p><span style="font-size: 12px;"><em><strong>File </strong>--&gt;<strong> Project Structure</strong> --&gt;<strong> '+'</strong> --&gt; <strong>From Maven </strong>=&gt; <strong>"mysql:mysql-connector-java:5.1.4.0"</strong> --&gt; <strong>OK</strong> --&gt; <strong>Applay</strong> --&gt; <strong>OK</strong></em></span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: 12px;"><em><strong><img src="https://i.imgur.com/6koQEBG.png" alt="" width="361" height="242" /></strong></em></span></p>
+<p><span style="font-size: 12px;"><em><strong><img src="https://i.imgur.com/RrcIszs.png" alt="" width="360" height="244" /></strong></em></span></p>
 </td>
 <td style="height: 100px; width: 316px;">
-<p>Na estrutura de ficheiros do projecto, bot&atilde;o direito sobre <strong>"Bibliotecas" </strong>--&gt; <strong>"Driver JDBC do mySql" </strong>=&gt; <strong>"mysql-connector-java5.1.23-bin.jar"</strong> --&gt;<strong>Adicionar Biblioteca&nbsp;</strong><br><img src="https://i.imgur.com/rnJ9p9W.png" alt="" width="364" height="320" /></p>
+<p>Na arvore da estrutura de ficheiros do projecto, bot&atilde;o direito sobre <strong>"Bibliotecas" </strong>--&gt; <strong>"Driver JDBC do mySql" </strong>=&gt; <strong>"mysql-connector-java5.1.23-bin.jar"</strong> --&gt; <strong>Adicionar Biblioteca&nbsp;</strong></p>
+<p>&nbsp;</p>
+<p><img src="https://i.imgur.com/rnJ9p9W.png" alt="" width="364" height="320" /></p>
 </td>
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
+<hr />
 <p>&nbsp;</p>
