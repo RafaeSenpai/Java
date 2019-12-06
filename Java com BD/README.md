@@ -56,7 +56,7 @@
 <p><span style="font-size: 12px;"><em><strong><img src="https://i.imgur.com/6koQEBG.png" alt="" width="361" height="242" /></strong></em></span></p>
 </td>
 <td style="height: 100px; width: 316px;">
-<p>Na estrutura de ficheiros do projecto, bot&atilde;o direito sobre <strong>"Bibliotecas" </strong>--&gt; <strong>"Driver JDBC do mySql" </strong>=&gt; <strong>"mysql-connector-java5.1.23-bin.jar"</strong> --&gt; <strong>Adicionar Biblioteca&nbsp;</strong><img src="https://i.imgur.com/rnJ9p9W.png" alt="" width="364" height="320" /></p>
+<p>Na estrutura de ficheiros do projecto, bot&atilde;o direito sobre <strong>"Bibliotecas" </strong>--&gt; <strong>"Driver JDBC do mySql" </strong>=&gt; <strong>"mysql-connector-java5.1.23-bin.jar"</strong> --&gt;<strong>Adicionar Biblioteca&nbsp;</strong><br><img src="https://i.imgur.com/rnJ9p9W.png" alt="" width="364" height="320" /></p>
 </td>
 </tr>
 </tbody>
