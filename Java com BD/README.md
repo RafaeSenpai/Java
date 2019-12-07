@@ -1,7 +1,7 @@
 <h1 align = "center"><strong>Java com Base de Dados</strong></h1>
 <p align = "center"><img src="https://www.learn2free.com/wp-content/uploads/2016/04/Java-Database-Connectivity-Tutorial-in-Urdu.jpg" alt="" width="600" height="300" /></p>
-
-
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
 <table style="width: 500px;" border="0" cellspacing="0.3" cellpadding="0">
 <tbody>
 <tr>
