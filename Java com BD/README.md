@@ -1,42 +1,37 @@
 <h1><strong>Java com Base de Dados</strong></h1>
-
 <p>&nbsp;</p>
-
-<table border="0" cellpadding="0" cellspacing="0.3" style="width:500px">
-	<tbody>
-		<tr>
-			<td>
-			<h2><span style="font-size:18px"><strong>Abordagem:</strong></span></h2>
-			</td>
-			<td>
-			<h2><span style="font-size:10px">- Criar liga&ccedil;&atilde;o &aacute; base de dados</span></h2>
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>
-			<h2><span style="font-size:10px">- Cria&ccedil;&atilde;o da camada de persist&ecirc;ncia - PATTERN DAO</span></h2>
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>
-			<h2><span style="font-size:10px">- Recorrer à composi&ccedil;&atilde;o para relacionar objectos</span></h2>
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>
-			<h2><span style="font-size:10px">- Registo de FK&#39;s (chaves estrangeiras)</span></h2>
-			</td>
-		</tr>
-	</tbody>
+<table style="width: 500px;" border="0" cellspacing="0.3" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<h2><span style="font-size: 18px;"><strong>Abordagem:</strong></span></h2>
+</td>
+<td>
+<h2><span style="font-size: 10px;">- Criar liga&ccedil;&atilde;o &aacute; base de dados</span></h2>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<h2><span style="font-size: 10px;">- Cria&ccedil;&atilde;o da camada de persist&ecirc;ncia - PATTERN DAO</span></h2>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<h2><span style="font-size: 10px;">- Recorrer &agrave; composi&ccedil;&atilde;o para relacionar objectos</span></h2>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<h2><span style="font-size: 10px;">- Registo de FK's (chaves estrangeiras)</span></h2>
+</td>
+</tr>
+</tbody>
 </table>
-
 <p>&nbsp;</p>
 <hr />
-<p>&nbsp;</p>
-
 <h2>1&ordm; Etapa - Importar bibliotecas de liga&ccedil;&atilde;o &agrave; base de dados</h2>
 <table style="width: 421px;" border="0" cellspacing="1" cellpadding="1">
 <tbody>
@@ -65,10 +60,6 @@
 </table>
 <p>&nbsp;</p>
 <hr />
-<p>&nbsp;</p>
-
-
-
 <h2>2&ordm; Etapa - Cria&ccedil;&atilde;o dos objectos "<em>Categoria</em>" e "<em>Produto</em>"&nbsp;</h2>
 <hr />
 <h2>3&ordm; Etapa - Criar camada de persist&ecirc;ncia</h2>
