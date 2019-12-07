@@ -1,5 +1,4 @@
 <h1><strong>Java com Base de Dados</strong></h1>
-
 <table style="width: 500px;" border="0" cellspacing="0.3" cellpadding="0">
 <tbody>
 <tr>
@@ -30,7 +29,7 @@
 </tr>
 </tbody>
 </table>
-
+<p>&nbsp;</p>
 <hr />
 <h2>1&ordm; Etapa - Importar bibliotecas de liga&ccedil;&atilde;o &agrave; base de dados</h2>
 <table style="width: 421px;" border="0" cellspacing="1" cellpadding="1">
@@ -58,9 +57,10 @@
 </tr>
 </tbody>
 </table>
-
+<p>&nbsp;</p>
 <hr />
 <h2>2&ordm; Etapa - Cria&ccedil;&atilde;o dos objectos "<em>Categoria</em>" e "<em>Produto</em>"&nbsp;</h2>
+<p>&nbsp;</p>
 <hr />
 <h2>3&ordm; Etapa - Criar camada de persist&ecirc;ncia</h2>
 <h3>&nbsp; &nbsp; &nbsp; DAO - Data Access Object</h3>
@@ -77,6 +77,7 @@
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 <hr />
 <h2>4&ordm; Etapa - Testando a liga&ccedil;&atilde;o &aacute; base de dados</h2>
 <h3>JUnit - Testes no Java</h3>
@@ -96,3 +97,4 @@
 <p><strong>Nota: </strong>No NetBeans para fazer testes a uma dada conex&atilde;o, tem 1&ordm; que selecionar o respetivo ficheiro de testes(**), <strong>bot&atilde;o direito</strong> --&gt;<strong> Ferramentas</strong> --&gt;<strong> Criar/Atualizar Testes</strong></p>
 <p><strong><img src="https://i.imgur.com/G0BzblG.png" alt="" width="407" height="509" /></strong></p>
 <p>... desta forma o NetBeans j&aacute; importa autom&aacute;ticamente as bibliotecas necess&aacute;rias do JUnit inclusive cria alguns metodos de teste.</p>
+<p>&nbsp;</p>
