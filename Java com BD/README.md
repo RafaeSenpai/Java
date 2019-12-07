@@ -1,9 +1,12 @@
-<h1><strong>Java com Base de Dados</strong></h1>
+<h1 align = "center"><strong>Java com Base de Dados</strong></h1>
+<p align = "center"><img src="https://www.learn2free.com/wp-content/uploads/2016/04/Java-Database-Connectivity-Tutorial-in-Urdu.jpg" alt="" width="600" height="300" /></p>
+
+
 <table style="width: 500px;" border="0" cellspacing="0.3" cellpadding="0">
 <tbody>
 <tr>
 <td>
-<h2><span style="font-size: 18px;"><strong>Abordagem:</strong></span></h2>
+<h2><span style="font-size: 18px;"><strong>Temas abordados:</strong></span></h2>
 </td>
 <td>
 <h2><span style="font-size: 10px;">- Criar liga&ccedil;&atilde;o &aacute; base de dados</span></h2>
@@ -30,6 +33,8 @@
 </tbody>
 </table>
 <p>&nbsp;</p>
+
+<p align = "center"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://static.javatpoint.com/java/new/images/java-database-connectivity-steps.jpg" alt="" width="392" height="398" /></p>
 <hr />
 <h2>1&ordm; Etapa - Importar bibliotecas de liga&ccedil;&atilde;o &agrave; base de dados</h2>
 <table style="width: 421px;" border="0" cellspacing="1" cellpadding="1">
@@ -98,3 +103,7 @@
 <p><strong><img src="https://i.imgur.com/G0BzblG.png" alt="" width="407" height="509" /></strong></p>
 <p>... desta forma o NetBeans importa autom&aacute;ticamente as bibliotecas necess&aacute;rias do JUnit inclusive cria alguns metodos de teste.</p>
 <p>&nbsp;</p>
+
+
+
+
