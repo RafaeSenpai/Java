@@ -79,7 +79,7 @@
 </table>
 <p>&nbsp;</p>
 <hr />
-<h2>4&ordm; Etapa - Testando a liga&ccedil;&atilde;o &aacute; base de dados</h2>
+<h2>4&ordm; Etapa - JUnit - Testando a liga&ccedil;&atilde;o &aacute; base de dados</h2>
 <h3>JUnit - Testes no Java</h3>
 <table>
 <tbody>
