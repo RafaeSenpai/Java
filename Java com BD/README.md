@@ -21,7 +21,7 @@
 		<tr>
 			<td>&nbsp;</td>
 			<td>
-			<h2><span style="font-size:10px">- Recorrer a composi&ccedil;&atilde;o para relacionar objectos</span></h2>
+			<h2><span style="font-size:10px">- Recorrer à composi&ccedil;&atilde;o para relacionar objectos</span></h2>
 			</td>
 		</tr>
 		<tr>
@@ -66,3 +66,23 @@
 <p>&nbsp;</p>
 <hr />
 <p>&nbsp;</p>
+
+
+
+<h2>2&ordm; Etapa - Cria&ccedil;&atilde;o dos objectos "<em>Categoria</em>" e "<em>Produto</em>"&nbsp;</h2>
+<hr />
+<h2>3&ordm; Etapa - Criar camada de persist&ecirc;ncia</h2>
+<h3>&nbsp; &nbsp; &nbsp; DAO - Data Access Object</h3>
+<h3>&nbsp; &nbsp; &nbsp; CRUD - Create | Read | Update | Delete</h3>
+<table>
+<tbody>
+<tr>
+<td>&nbsp; &nbsp;&nbsp;<strong>Ficheiros:</strong></td>
+<td>categoriaDAO.java</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>produtoDAO.java</td>
+</tr>
+</tbody>
+</table>
