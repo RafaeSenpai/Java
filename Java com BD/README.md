@@ -9,7 +9,7 @@
 <h2><span style="font-size: 18px;"><strong>Sumário:</strong></span></h2>
 </td>
 <td>
-<h2><span style="font-size: 10px;">- Criar liga&ccedil;&atilde;o &aacute; base de dados</span></h2>
+<h2><span style="font-size: 10px;">- Estabelecer conex&atilde;o &aacute; base de dados</p></span></h2>
 </td>
 </tr>
 <tr>
