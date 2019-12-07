@@ -96,5 +96,5 @@
 <p>&nbsp;</p>
 <p><strong>Nota: </strong>No NetBeans para fazer testes a uma dada conex&atilde;o, tem 1&ordm; que selecionar o respetivo ficheiro de testes(**), <strong>bot&atilde;o direito</strong> --&gt;<strong> Ferramentas</strong> --&gt;<strong> Criar/Atualizar Testes</strong></p>
 <p><strong><img src="https://i.imgur.com/G0BzblG.png" alt="" width="407" height="509" /></strong></p>
-<p>... desta forma o NetBeans j&aacute; importa autom&aacute;ticamente as bibliotecas necess&aacute;rias do JUnit inclusive cria alguns metodos de teste.</p>
+<p>... desta forma o NetBeans importa autom&aacute;ticamente as bibliotecas necess&aacute;rias do JUnit inclusive cria alguns metodos de teste.</p>
 <p>&nbsp;</p>
