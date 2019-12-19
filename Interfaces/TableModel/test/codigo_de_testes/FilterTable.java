@@ -1,4 +1,4 @@
-package view;
+package codigo_de_testes;
 
 import javax.swing.*;
    import javax.swing.table.*;
@@ -51,7 +51,7 @@ import javax.swing.*;
                                                                                 //É CRIADA A TABELA                                                                          
                                                                                 JTable table = new JTable(model);
                                                                                 //CRIAÇÃO DO MODELO DE ORDENAÇÃP PARA A TABELA ANTERIORMENTE CRIADA COM BASE NO "SORTER" POSTERIORMENTE DEFINIDO
-                                                                                TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(model);
+                                                                                final TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(model);
                                                                                 //APLICAR O MODELO DE ORDENAÇÃO ANTERIORMENTE CRIADO Á TABELA CRIADA NO PASSO ANTERIOR
                                                                                 table.setRowSorter(sorter);
                                                                                 //FORMATAÇÕES RELATIVAS A SCROLL PARA A LISTA COM AS LINHAS DE INFORMAÇÃO

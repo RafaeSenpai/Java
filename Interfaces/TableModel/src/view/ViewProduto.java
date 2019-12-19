@@ -4,11 +4,9 @@
  * and open the template in the editor.
  */
 package view;
-
-import java.util.Set;
+import java.util.regex.PatternSyntaxException;
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.RowSorter;
+import javax.swing.RowFilter;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import model.Produto;
@@ -22,7 +20,9 @@ public class ViewProduto extends javax.swing.JFrame {
 
     /*1º Cria um objeto do tipo ProdutoTableModel*/
     ProdutoTableModel modeloDeTabela = new ProdutoTableModel();
-    
+    //CRIAÇÃO DO MODELO DE ORDENAÇÃP PARA A TABELA ANTERIORMENTE CRIADA COM BASE NO "SORTER" POSTERIORMENTE DEFINIDO
+        TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(modeloDeTabela);
+        
     /**
      * Creates new form ViewProduto
      */
@@ -34,9 +34,17 @@ public class ViewProduto extends javax.swing.JFrame {
         */
         JTProdutos.setModel(modeloDeTabela);
                
-        /*Abaixo, aplicação de ordenação alfabética do conteudo apresentado na tabela, atravez da seleção da coluna 
-        pela qual deve ser aplicada a ordenação da informação*/
+        //Abaixo, aplicação de ordenação alfabética do conteudo apresentado na tabela, atravez da seleção da coluna 
+        //pela qual deve ser aplicada a ordenação da informação*/
         JTProdutos.setRowSorter(new TableRowSorter(modeloDeTabela));
+        
+        
+        
+        //***************************************************************
+        //APLICAR O MODELO DE ORDENAÇÃO ANTERIORMENTE CRIADO Á TABELA CRIADA NO PASSO ANTERIOR
+        JTProdutos.setRowSorter(sorter);
+        
+        //***************************************************************
     }
     
     /**
@@ -60,6 +68,8 @@ public class ViewProduto extends javax.swing.JFrame {
         btnExcluir = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        txtValProcurar = new javax.swing.JTextField();
+        btnProcurar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -106,6 +116,19 @@ public class ViewProduto extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("Recorrendo a ArrayList");
 
+        txtValProcurar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtValProcurarActionPerformed(evt);
+            }
+        });
+
+        btnProcurar.setText("Procurar");
+        btnProcurar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProcurarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -128,24 +151,37 @@ public class ViewProduto extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(42, 42, 42)
-                                .addComponent(btnSalvar)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btnSalvar)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnExcluir))
+                                    .addComponent(txtValProcurar))
                                 .addGap(18, 18, 18)
-                                .addComponent(btnExcluir)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnAlterar)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnAlterar)
+                                    .addComponent(btnProcurar, javax.swing.GroupLayout.Alignment.TRAILING))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(304, 304, 304)))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(314, 314, 314))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(24, Short.MAX_VALUE)
+                        .addComponent(jLabel4)
+                        .addGap(18, 18, 18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtValProcurar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnProcurar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2)
@@ -201,7 +237,31 @@ public class ViewProduto extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Selecione a informação, na tabela, que quer alterar!","Procedimento incorreto",JOptionPane.ERROR_MESSAGE);
         } 
     }//GEN-LAST:event_btnAlterarActionPerformed
+    
+    private void btnProcurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcurarActionPerformed
+        //GUARDAR NUMA STRING O QUE VALOR ESCRITO NA textField 
+        String text = txtValProcurar.getText();
+        //verifica se o mesmo textfield se encontra vazio
+        if (text.length() == 0) {
+          //caso esteja vazio não aplica filtro nenhum, logo a lista não altera
+          sorter.setRowFilter(null);
+         } else {
+            //caso a textfield tenha algum parametro
+             try{
+                 /*DEFINIÇÃO DE COMO VAI SER FEITA A FILTRAGEM, TRAVEZ DE REGEX, EM QUE A PROCURA PELO TERMO 
+                 INSERIDO NA TEXTFIELD É FEITA EM TODAS AS COLUNAS DA TABELA (PODE-SE AFINAR A PROCURA PARA 
+                 UMA COLUNA EXPECIFICA)*/
+                sorter.setRowFilter(RowFilter.regexFilter(text));
+             }catch(PatternSyntaxException pse) {
+                System.err.println("Erro");
+             }
+         }
+    }//GEN-LAST:event_btnProcurarActionPerformed
 
+    private void txtValProcurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtValProcurarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtValProcurarActionPerformed
+  
     /**
      * @param args the command line arguments
      */
@@ -241,6 +301,7 @@ public class ViewProduto extends javax.swing.JFrame {
     private javax.swing.JTable JTProdutos;
     private javax.swing.JButton btnAlterar;
     private javax.swing.JButton btnExcluir;
+    private javax.swing.JButton btnProcurar;
     private javax.swing.JButton btnSalvar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -249,6 +310,7 @@ public class ViewProduto extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtDesc;
     private javax.swing.JTextField txtQtd;
+    private javax.swing.JTextField txtValProcurar;
     private javax.swing.JTextField txtValor;
     // End of variables declaration//GEN-END:variables
 }
