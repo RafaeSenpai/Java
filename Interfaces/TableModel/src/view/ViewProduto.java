@@ -7,6 +7,8 @@ package view;
 
 import java.util.Set;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.RowSorter;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import model.Produto;
@@ -31,9 +33,12 @@ public class ViewProduto extends javax.swing.JFrame {
         * está a ser definido como "modeloDeTabela", conforme coi definido previamente nesta class, viewProduto
         */
         JTProdutos.setModel(modeloDeTabela);
+               
+        /*Abaixo, aplicação de ordenação alfabética do conteudo apresentado na tabela, atravez da seleção da coluna 
+        pela qual deve ser aplicada a ordenação da informação*/
         JTProdutos.setRowSorter(new TableRowSorter(modeloDeTabela));
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -247,3 +252,36 @@ public class ViewProduto extends javax.swing.JFrame {
     private javax.swing.JTextField txtValor;
     // End of variables declaration//GEN-END:variables
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

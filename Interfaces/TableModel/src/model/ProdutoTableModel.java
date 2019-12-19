@@ -58,7 +58,7 @@ public class ProdutoTableModel extends AbstractTableModel{
     }
         
     /*
-        Atualizar a informação da tabela, selecionando previamente a linha a ser alterada.
+    Atualizar a informação da tabela, selecionando previamente a linha a ser alterada.
     Nesta função são passados como parametro o novo valor que se quer atualizar, o numero da linha a ser atualizada e a coluna onde se encontra os dados a alterar
     */
     public void atualizaInformação(Object valor, int linha, int coluna){
