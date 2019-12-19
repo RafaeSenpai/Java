@@ -8,6 +8,7 @@ package view;
 import java.util.Set;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
 import model.Produto;
 import model.ProdutoTableModel;
 
@@ -30,7 +31,7 @@ public class ViewProduto extends javax.swing.JFrame {
         * está a ser definido como "modeloDeTabela", conforme coi definido previamente nesta class, viewProduto
         */
         JTProdutos.setModel(modeloDeTabela);
-        
+        JTProdutos.setRowSorter(new TableRowSorter(modeloDeTabela));
     }
 
     /**
