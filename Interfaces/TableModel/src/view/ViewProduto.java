@@ -20,8 +20,8 @@ public class ViewProduto extends javax.swing.JFrame {
 
     /*1º Cria um objeto do tipo ProdutoTableModel*/
     ProdutoTableModel modeloDeTabela = new ProdutoTableModel();
-    //CRIAÇÃO DO MODELO DE ORDENAÇÃP PARA A TABELA ANTERIORMENTE CRIADA COM BASE NO "SORTER" POSTERIORMENTE DEFINIDO
-        TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(modeloDeTabela);
+    //CRIAÇÃO DO MODELO DE ORDENAÇÃo PARA A TABELA ANTERIORMENTE CRIADA COM BASE NO "SORTER" POSTERIORMENTE DEFINIDO
+    TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(modeloDeTabela);
         
     /**
      * Creates new form ViewProduto
@@ -33,17 +33,11 @@ public class ViewProduto extends javax.swing.JFrame {
         * está a ser definido como "modeloDeTabela", conforme coi definido previamente nesta class, viewProduto
         */
         JTProdutos.setModel(modeloDeTabela);
-               
-        //Abaixo, aplicação de ordenação alfabética do conteudo apresentado na tabela, atravez da seleção da coluna 
-        //pela qual deve ser aplicada a ordenação da informação*/
-        JTProdutos.setRowSorter(new TableRowSorter(modeloDeTabela));
-        
-        
-        
+                       
         //***************************************************************
         //APLICAR O MODELO DE ORDENAÇÃO ANTERIORMENTE CRIADO Á TABELA CRIADA NO PASSO ANTERIOR
         JTProdutos.setRowSorter(sorter);
-        
+        sorter.toggleSortOrder(0); //<<---Esta linha seleciona a coluna padrão ordenada
         //***************************************************************
     }
     
